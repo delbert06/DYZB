@@ -26,21 +26,20 @@ class HomeViewController: UIViewController {
         let contentFrame = CGRect(x: 0, y: kStautusBarH + kNavigationBarH + ktitleViewH, width: kScreenW, height: contentH)
         
         var childVCs = [UIViewController]()
-//
-//        for _ in 0..<4 {
-//            let vc = UIViewController()
-//            vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
-//            childVCs.append(vc)
-//        }
+
         let youxiVC = self.storyboard?.instantiateViewController(withIdentifier: "youxi")
-        let tuijianVC = self.storyboard?.instantiateViewController(withIdentifier: "tuijian")
+//        let tuijianVC = self.storyboard?.instantiateViewController(withIdentifier: "tuijian")
         let yuleVC = self.storyboard?.instantiateViewController(withIdentifier:"yule")
         let quwanVC = self.storyboard?.instantiateViewController(withIdentifier:"quwan")
-        
+
+        childVCs.append(RecommendViewController())
+        //        childVCs.append(tuijianVC!)
         childVCs.append(youxiVC!)
-        childVCs.append(tuijianVC!)
         childVCs.append(yuleVC!)
         childVCs.append(quwanVC!)
+        
+        
+        
         let contentView = PageContentView(frame: contentFrame, childVCs: childVCs, parentVC: self)
         contentView.delegate = self
         
