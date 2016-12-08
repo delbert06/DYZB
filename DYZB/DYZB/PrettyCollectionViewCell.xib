@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PrettyCollectionViewCell" customModule="DYZB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="196" height="167"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="196" height="167"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMi-Ow-B6Q">
+                        <rect key="frame" x="0.0" y="143" width="91" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="RLt-R4-gh8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="我是皇家马德里" image="ico_location">
+                            <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="皇家马德里" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awS-hS-zre">
+                        <rect key="frame" x="0.0" y="118" width="67" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="vUf-B6-0y2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_cell_default_phone" translatesAutoresizingMaskIntoConstraints="NO" id="U7R-au-kEk">
+                        <rect key="frame" x="0.0" y="0.0" width="196" height="113"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="666在线" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIi-oH-ASO">
+                        <rect key="frame" x="131" y="5" width="60" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Fw6-42-HOn"/>
+                            <constraint firstAttribute="width" constant="60" id="d2q-vz-CCa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="U7R-au-kEk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HjI-Cb-xSe"/>
+                <constraint firstItem="yMi-Ow-B6Q" firstAttribute="top" secondItem="awS-hS-zre" secondAttribute="bottom" constant="5" id="ILc-Q5-heY"/>
+                <constraint firstItem="bIi-oH-ASO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="WPq-Lc-Ikm"/>
+                <constraint firstItem="yMi-Ow-B6Q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cGA-cF-J4a"/>
+                <constraint firstAttribute="bottom" secondItem="yMi-Ow-B6Q" secondAttribute="bottom" constant="10" id="cNR-ZT-yet"/>
+                <constraint firstItem="awS-hS-zre" firstAttribute="top" secondItem="U7R-au-kEk" secondAttribute="bottom" constant="5" id="hDI-s1-nA7"/>
+                <constraint firstAttribute="trailing" secondItem="U7R-au-kEk" secondAttribute="trailing" id="kBl-Lb-CHB"/>
+                <constraint firstItem="awS-hS-zre" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="u5D-5M-kFZ"/>
+                <constraint firstAttribute="trailing" secondItem="bIi-oH-ASO" secondAttribute="trailing" constant="5" id="wST-U7-dpq"/>
+                <constraint firstItem="U7R-au-kEk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wcI-hi-fWE"/>
+            </constraints>
+            <size key="customSize" width="196" height="167"/>
+            <connections>
+                <outlet property="img" destination="U7R-au-kEk" id="lqi-t7-nL6"/>
+                <outlet property="onLineLabel" destination="bIi-oH-ASO" id="DhK-A4-HIG"/>
+            </connections>
+            <point key="canvasLocation" x="15" y="-6.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ico_location" width="12" height="12"/>
+        <image name="live_cell_default_phone" width="103" height="103"/>
+    </resources>
+</document>
