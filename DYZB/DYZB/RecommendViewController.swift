@@ -19,6 +19,8 @@ let kPrettyItemH = kItemW * 4 / 3
 let kPrettyCellID = "kPrettyCellID"
 
 class RecommendViewController: UIViewController {
+    // MARK: - 懒加载ViewModel
+    lazy var recommendViewModel : RecommendViewModel = RecommendViewModel()
     // MARK: - 懒加载属性
     lazy var collectionView : UICollectionView = {[unowned self] in
         // 1. 创建布局
@@ -48,6 +50,7 @@ class RecommendViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        loadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -99,8 +102,11 @@ extension RecommendViewController :UICollectionViewDataSource , UICollectionView
             return CGSize(width: kItemW, height: kNormalItemH)
         }
     }
-    
-//    collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-    
-    
+}
+
+// MARK: - 网络请求
+extension RecommendViewController{
+    func loadData(){
+        recommendViewModel.requestData()
+    }
 }
