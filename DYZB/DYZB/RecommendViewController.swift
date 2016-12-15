@@ -67,12 +67,13 @@ extension RecommendViewController{
 
 extension RecommendViewController :UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 12
+        return recommendViewModel.anchorGroups.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if section == 0 {return 8}
-        return 4
+        let group = recommendViewModel.anchorGroups[section]
+        
+        return group.anchors.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -89,8 +90,11 @@ extension RecommendViewController :UICollectionViewDataSource , UICollectionView
     // 头部view的实现
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         // 1. 取出section的headerView
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderView, for: indexPath)
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderView, for: indexPath) as! CollectionHeaderView
         headerView.backgroundColor = UIColor.white
+
+        // 2. 取出模型
+        headerView.group = recommendViewModel.anchorGroups[indexPath.section]
         
         return headerView
     }
@@ -107,6 +111,8 @@ extension RecommendViewController :UICollectionViewDataSource , UICollectionView
 // MARK: - 网络请求
 extension RecommendViewController{
     func loadData(){
-        recommendViewModel.requestData()
+        recommendViewModel.requestData { 
+            self.collectionView.reloadData()
+        }
     }
 }
