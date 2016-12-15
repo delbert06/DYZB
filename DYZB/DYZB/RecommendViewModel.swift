@@ -44,7 +44,7 @@ extension RecommendViewModel {
             guard let resultDict = result as? [String : NSObject] else {return}
             guard let dataArray = resultDict["data"] as? [[String : NSObject]] else {return}
             
-            self.prettyGroup.icon_name = "颜值"
+            self.prettyGroup.tag_name = "颜值"
             self.prettyGroup.icon_name = "home_header_phone"
             
             for dict in dataArray{

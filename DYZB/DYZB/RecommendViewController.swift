@@ -13,7 +13,7 @@ let kItemW = (kScreenW - 3 * kItemMargin) / 2
 let kNormalItemH = kItemW * 3 / 4
 let kNormalCellID = "kNormalCellID"
 let kHeadView : CGFloat = 50
-let kHeaderView = "kHeaderView"
+let kHeaderViewID = "kHeaderViewID"
 
 let kPrettyItemH = kItemW * 4 / 3
 let kPrettyCellID = "kPrettyCellID"
@@ -42,7 +42,7 @@ class RecommendViewController: UIViewController {
         
         collectionView.register(UINib(nibName:"NormalCollectionCell",bundle:nil), forCellWithReuseIdentifier: kNormalCellID)
         collectionView.register(UINib(nibName:"PrettyCollectionViewCell",bundle:nil), forCellWithReuseIdentifier: kPrettyCellID)
-        collectionView.register(UINib(nibName:"CollectionHeaderView",bundle:nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderView)
+        collectionView.register(UINib(nibName:"CollectionHeaderView",bundle:nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
         
         return collectionView
     }()
@@ -90,7 +90,7 @@ extension RecommendViewController :UICollectionViewDataSource , UICollectionView
     // 头部view的实现
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         // 1. 取出section的headerView
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderView, for: indexPath) as! CollectionHeaderView
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath) as! CollectionHeaderView
         headerView.backgroundColor = UIColor.white
 
         // 2. 取出模型
