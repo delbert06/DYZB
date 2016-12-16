@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Kingfisher
 class CollectionBaseCell: UICollectionViewCell {
     
     @IBOutlet weak var nickNameLabel: UILabel!
@@ -32,7 +32,8 @@ class CollectionBaseCell: UICollectionViewCell {
             nickNameLabel.text = anchor.nickname
             
             // 3. 设置封面图片
-            
+            let iconURL = URL(string: anchor.vertical_src)
+            iconImageView.kf.setImage(with: iconURL)
         }
     }
 }
