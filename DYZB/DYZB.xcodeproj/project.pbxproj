@@ -40,6 +40,7 @@
 		8DA5EB171DB4FC800082C9A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA5EB151DB4FC800082C9A5 /* LaunchScreen.storyboard */; };
 		8DC320881E0119D60063AD93 /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC320871E0119D60063AD93 /* AnchorGroup.swift */; };
 		8DC3208A1E0120B60063AD93 /* AnChorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC320891E0120B60063AD93 /* AnChorModel.swift */; };
+		8DDA90861E03B98800959BF8 /* CollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA90851E03B98800959BF8 /* CollectionBaseCell.swift */; };
 		8DF121611DFA7C1C00311644 /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF121601DFA7C1C00311644 /* RecommendViewModel.swift */; };
 		8DF121631DFA8B5500311644 /* NSDateEtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF121621DFA8B5500311644 /* NSDateEtension.swift */; };
 		E4DA65E2A2EC05E11D3857C2 /* Pods_DYZB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 502ADED3345A1F0D51C94705 /* Pods_DYZB.framework */; };
@@ -83,6 +84,7 @@
 		8DA5EB181DB4FC800082C9A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC320871E0119D60063AD93 /* AnchorGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
 		8DC320891E0120B60063AD93 /* AnChorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnChorModel.swift; sourceTree = "<group>"; };
+		8DDA90851E03B98800959BF8 /* CollectionBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionBaseCell.swift; sourceTree = "<group>"; };
 		8DF121601DFA7C1C00311644 /* RecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
 		8DF121621DFA8B5500311644 /* NSDateEtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateEtension.swift; sourceTree = "<group>"; };
 		DE1146E05887299EB3D8B4E6 /* Pods-DYZB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYZB/Pods-DYZB.debug.xcconfig"; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				8D7793F81DF7F3CA00E68D6C /* NormalCollectionCell.xib */,
 				8D7793FB1DF8F9AC00E68D6C /* PrettyCollectionViewCell.swift */,
 				8D7793FC1DF8F9AC00E68D6C /* PrettyCollectionViewCell.xib */,
+				8DDA90851E03B98800959BF8 /* CollectionBaseCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				8DC320881E0119D60063AD93 /* AnchorGroup.swift in Sources */,
 				8DA5EB0F1DB4FC800082C9A5 /* ViewController.swift in Sources */,
 				8DA5EB0D1DB4FC800082C9A5 /* AppDelegate.swift in Sources */,
+				8DDA90861E03B98800959BF8 /* CollectionBaseCell.swift in Sources */,
 				8D7793F91DF7F3CA00E68D6C /* NormalCollectionCell.swift in Sources */,
 				8D7793F51DF7EAE500E68D6C /* CollectionHeaderView.swift in Sources */,
 				8D542A641DB50354001C7056 /* HomeViewController.swift in Sources */,

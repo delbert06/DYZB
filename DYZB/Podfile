@@ -6,5 +6,6 @@ target 'DYZB' do
   use_frameworks!
 
 pod 'Alamofire'
+pod 'Kingfisher'
 
 end

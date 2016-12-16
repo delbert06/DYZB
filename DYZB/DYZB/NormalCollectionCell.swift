@@ -8,13 +8,22 @@
 
 import UIKit
 
-class NormalCollectionCell: UICollectionViewCell {
+class NormalCollectionCell: CollectionBaseCell {
 
-    @IBOutlet weak var ImgView: UIImageView!
+    @IBOutlet weak var roomNameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        ImgView.layer.cornerRadius = 5
-        ImgView.layer.masksToBounds = true
+        iconImageView.layer.cornerRadius = 5
+        iconImageView.layer.masksToBounds = true
+    }
+    
+    override var anchor : AnChorModel? {
+        didSet{
+            super.anchor = anchor
+            
+            roomNameLabel.text = anchor?.room_name
+        }
     }
 }
+

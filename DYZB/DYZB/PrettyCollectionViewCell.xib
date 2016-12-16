@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,18 +18,18 @@
                 <rect key="frame" x="0.0" y="0.0" width="196" height="167"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMi-Ow-B6Q">
-                        <rect key="frame" x="0.0" y="143" width="91" height="14"/>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMi-Ow-B6Q">
+                        <rect key="frame" x="0.0" y="143" width="46" height="14"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="14" id="RLt-R4-gh8"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <state key="normal" title="我是皇家马德里" image="ico_location">
+                        <state key="normal" title="马德里" image="ico_location">
                             <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         </state>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="皇家马德里" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awS-hS-zre">
-                        <rect key="frame" x="0.0" y="118" width="67" height="20"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="劳尔冈萨雷斯" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awS-hS-zre">
+                        <rect key="frame" x="0.0" y="118" width="80" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="vUf-B6-0y2"/>
                         </constraints>
@@ -40,35 +40,38 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_cell_default_phone" translatesAutoresizingMaskIntoConstraints="NO" id="U7R-au-kEk">
                         <rect key="frame" x="0.0" y="0.0" width="196" height="113"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="666在线" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIi-oH-ASO">
-                        <rect key="frame" x="131" y="5" width="60" height="20"/>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Khq-dz-5D5">
+                        <rect key="frame" x="128" y="8" width="60" height="20"/>
                         <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="20" id="Fw6-42-HOn"/>
-                            <constraint firstAttribute="width" constant="60" id="d2q-vz-CCa"/>
+                            <constraint firstAttribute="height" constant="20" id="oky-g6-WGs"/>
+                            <constraint firstAttribute="width" constant="60" id="z9P-WB-OfB"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                        <state key="normal" title="66在线">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
                 </subviews>
             </view>
             <constraints>
+                <constraint firstItem="Khq-dz-5D5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="0A4-1L-KfT"/>
                 <constraint firstItem="U7R-au-kEk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HjI-Cb-xSe"/>
                 <constraint firstItem="yMi-Ow-B6Q" firstAttribute="top" secondItem="awS-hS-zre" secondAttribute="bottom" constant="5" id="ILc-Q5-heY"/>
-                <constraint firstItem="bIi-oH-ASO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="WPq-Lc-Ikm"/>
                 <constraint firstItem="yMi-Ow-B6Q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cGA-cF-J4a"/>
                 <constraint firstAttribute="bottom" secondItem="yMi-Ow-B6Q" secondAttribute="bottom" constant="10" id="cNR-ZT-yet"/>
                 <constraint firstItem="awS-hS-zre" firstAttribute="top" secondItem="U7R-au-kEk" secondAttribute="bottom" constant="5" id="hDI-s1-nA7"/>
                 <constraint firstAttribute="trailing" secondItem="U7R-au-kEk" secondAttribute="trailing" id="kBl-Lb-CHB"/>
+                <constraint firstAttribute="trailing" secondItem="Khq-dz-5D5" secondAttribute="trailing" constant="8" id="ldo-KW-MNh"/>
                 <constraint firstItem="awS-hS-zre" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="u5D-5M-kFZ"/>
-                <constraint firstAttribute="trailing" secondItem="bIi-oH-ASO" secondAttribute="trailing" constant="5" id="wST-U7-dpq"/>
                 <constraint firstItem="U7R-au-kEk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wcI-hi-fWE"/>
             </constraints>
             <size key="customSize" width="196" height="167"/>
             <connections>
-                <outlet property="img" destination="U7R-au-kEk" id="lqi-t7-nL6"/>
-                <outlet property="onLineLabel" destination="bIi-oH-ASO" id="DhK-A4-HIG"/>
+                <outlet property="cityBtn" destination="yMi-Ow-B6Q" id="t5W-zg-QVh"/>
+                <outlet property="iconImageView" destination="U7R-au-kEk" id="R8Q-0J-iEq"/>
+                <outlet property="nickNameLabel" destination="awS-hS-zre" id="yc4-ei-7EN"/>
+                <outlet property="onlineBtn" destination="Khq-dz-5D5" id="a6e-1O-9ye"/>
             </connections>
             <point key="canvasLocation" x="15" y="-6.5"/>
         </collectionViewCell>

@@ -8,18 +8,24 @@
 
 import UIKit
 
-class PrettyCollectionViewCell: UICollectionViewCell {
+class PrettyCollectionViewCell: CollectionBaseCell {
 
-    @IBOutlet weak var onLineLabel: UILabel!
-    @IBOutlet weak var img: UIImageView!
+    @IBOutlet weak var cityBtn: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        img.layer.cornerRadius = 5
-        img.layer.masksToBounds = true
+        iconImageView.layer.cornerRadius = 5
+        iconImageView.layer.masksToBounds = true
         
-        onLineLabel.layer.cornerRadius = 5
-        onLineLabel.layer.masksToBounds = true
+        onlineBtn.layer.cornerRadius = 5
+        onlineBtn.layer.masksToBounds = true
     }
-
+    
+    override var anchor : AnChorModel? {
+        didSet{
+            super.anchor = anchor
+            cityBtn.setTitle(anchor?.anchor_city, for: .normal)
+        }
+    }
 }

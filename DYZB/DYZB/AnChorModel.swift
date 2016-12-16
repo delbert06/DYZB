@@ -24,6 +24,8 @@ class AnChorModel: NSObject {
     // 昵称
     var nickname = ""
     
+    var anchor_city : String = ""
+    
     //在线人数
     var online = 0
     
