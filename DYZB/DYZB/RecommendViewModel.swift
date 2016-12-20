@@ -11,8 +11,8 @@ import UIKit
 class RecommendViewModel: NSObject {
 // MARK: - 懒加载属性
     lazy var anchorGroups : [AnchorGroup] = [AnchorGroup]()
-    lazy var bigDataGroup : AnchorGroup = AnchorGroup()
-    lazy var prettyGroup : AnchorGroup = AnchorGroup()
+    fileprivate lazy var bigDataGroup : AnchorGroup = AnchorGroup()
+    fileprivate lazy var prettyGroup : AnchorGroup = AnchorGroup()
 }
 
 // MARK: - 发送网络请求

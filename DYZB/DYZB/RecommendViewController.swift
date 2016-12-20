@@ -8,21 +8,21 @@
 
 import UIKit
 
-let kItemMargin :CGFloat = 10
-let kItemW = (kScreenW - 3 * kItemMargin) / 2
-let kNormalItemH = kItemW * 3 / 4
-let kNormalCellID = "kNormalCellID"
-let kHeadView : CGFloat = 50
-let kHeaderViewID = "kHeaderViewID"
+private let kItemMargin :CGFloat = 10
+private let kItemW = (kScreenW - 3 * kItemMargin) / 2
+private let kNormalItemH = kItemW * 3 / 4
+private let kNormalCellID = "kNormalCellID"
+private let kHeadView : CGFloat = 50
+private let kHeaderViewID = "kHeaderViewID"
 
-let kPrettyItemH = kItemW * 4 / 3
-let kPrettyCellID = "kPrettyCellID"
+private let kPrettyItemH = kItemW * 4 / 3
+private let kPrettyCellID = "kPrettyCellID"
 
 class RecommendViewController: UIViewController {
     // MARK: - 懒加载ViewModel
-    lazy var recommendViewModel : RecommendViewModel = RecommendViewModel()
+    fileprivate lazy var recommendViewModel : RecommendViewModel = RecommendViewModel()
     // MARK: - 懒加载属性
-    lazy var collectionView : UICollectionView = {[unowned self] in
+    fileprivate lazy var collectionView : UICollectionView = {[unowned self] in
         // 1. 创建布局
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: kItemW, height: kNormalItemH)
@@ -43,6 +43,8 @@ class RecommendViewController: UIViewController {
         collectionView.register(UINib(nibName:"NormalCollectionCell",bundle:nil), forCellWithReuseIdentifier: kNormalCellID)
         collectionView.register(UINib(nibName:"PrettyCollectionViewCell",bundle:nil), forCellWithReuseIdentifier: kPrettyCellID)
         collectionView.register(UINib(nibName:"CollectionHeaderView",bundle:nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
+        
+        collectionView.backgroundColor = UIColor.white
         
         return collectionView
     }()
