@@ -11,12 +11,13 @@ import UIKit
 private let kItemMargin :CGFloat = 10
 private let kItemW = (kScreenW - 3 * kItemMargin) / 2
 private let kNormalItemH = kItemW * 3 / 4
-private let kNormalCellID = "kNormalCellID"
 private let kHeadView : CGFloat = 50
-private let kHeaderViewID = "kHeaderViewID"
-
 private let kPrettyItemH = kItemW * 4 / 3
+private let kNormalCellID = "kNormalCellID"
+private let kHeaderViewID = "kHeaderViewID"
 private let kPrettyCellID = "kPrettyCellID"
+
+private let kCycleH = kScreenW * 3 / 8
 
 class RecommendViewController: UIViewController {
     // MARK: - 懒加载ViewModel
@@ -48,6 +49,13 @@ class RecommendViewController: UIViewController {
         
         return collectionView
     }()
+    
+    fileprivate lazy var recommendCycleView : RecommendCycleView = {
+        let cycleView = RecommendCycleView.recommendCycleView()
+        cycleView.frame = CGRect(x: 0, y: -kCycleH, width: kScreenW, height: kCycleH)
+        
+        return cycleView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +72,10 @@ class RecommendViewController: UIViewController {
 extension RecommendViewController{
     func setupUI(){
         view.addSubview(collectionView)
+        
+        collectionView.addSubview(recommendCycleView)
+        // 内边距
+        collectionView.contentInset = UIEdgeInsets(top: kCycleH, left: 0, bottom: 0, right: 0)
     }
 }
 
