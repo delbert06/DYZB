@@ -14,8 +14,14 @@ class RecommendCycleView: UIView {
 
     @IBOutlet weak var pageView: UIPageControl!
     @IBOutlet weak var collectionView: UICollectionView!
-//
     
+    // MARK: - 定义属性
+    var cycleModels : [CycleModel]? = [CycleModel](){
+        didSet{
+            collectionView.reloadData()
+            pageView.numberOfPages = cycleModels?.count ?? 0
+        }
+    }
     // MARK: 系统回调函数
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,7 +31,6 @@ class RecommendCycleView: UIView {
         
         // colldectionView
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cycleViewCellID)
-        print("wake")
     }
     
     override func layoutSubviews() {
@@ -33,7 +38,6 @@ class RecommendCycleView: UIView {
         
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = collectionView.bounds.size
-        print("layout")
     }
 }
 
@@ -45,7 +49,7 @@ extension RecommendCycleView {
 
 extension RecommendCycleView : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return cycleModels?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

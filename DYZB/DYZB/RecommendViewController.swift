@@ -138,5 +138,9 @@ extension RecommendViewController{
         recommendViewModel.requestData { 
             self.collectionView.reloadData()
         }
+        
+        recommendViewModel.requstCycleData { 
+            self.recommendCycleView.cycleModels = self.recommendViewModel.cycleModels
+        }
     }
 }

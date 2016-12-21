@@ -31,6 +31,7 @@
 		8D7793FA1DF7F3CA00E68D6C /* NormalCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D7793F81DF7F3CA00E68D6C /* NormalCollectionCell.xib */; };
 		8D7793FD1DF8F9AC00E68D6C /* PrettyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7793FB1DF8F9AC00E68D6C /* PrettyCollectionViewCell.swift */; };
 		8D7793FE1DF8F9AC00E68D6C /* PrettyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D7793FC1DF8F9AC00E68D6C /* PrettyCollectionViewCell.xib */; };
+		8D7DCF5E1E0A5900004A7130 /* CycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7DCF5D1E0A5900004A7130 /* CycleModel.swift */; };
 		8DA170231DBE3DC100C4E1D4 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA170221DBE3DC100C4E1D4 /* PageContentView.swift */; };
 		8DA170291DBE60A600C4E1D4 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA170281DBE60A600C4E1D4 /* UIColorExtension.swift */; };
 		8DA5EB0D1DB4FC800082C9A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5EB0C1DB4FC800082C9A5 /* AppDelegate.swift */; };
@@ -75,6 +76,7 @@
 		8D7793F81DF7F3CA00E68D6C /* NormalCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NormalCollectionCell.xib; sourceTree = "<group>"; };
 		8D7793FB1DF8F9AC00E68D6C /* PrettyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrettyCollectionViewCell.swift; sourceTree = "<group>"; };
 		8D7793FC1DF8F9AC00E68D6C /* PrettyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrettyCollectionViewCell.xib; sourceTree = "<group>"; };
+		8D7DCF5D1E0A5900004A7130 /* CycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleModel.swift; sourceTree = "<group>"; };
 		8DA170221DBE3DC100C4E1D4 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		8DA170281DBE60A600C4E1D4 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		8DA5EB091DB4FC800082C9A5 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +113,7 @@
 			children = (
 				8DC320871E0119D60063AD93 /* AnchorGroup.swift */,
 				8DC320891E0120B60063AD93 /* AnChorModel.swift */,
+				8D7DCF5D1E0A5900004A7130 /* CycleModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 				8D231F9F1DF9497D002D31FC /* NetworkTools.swift */,
 			);
 			name = Tool;
+			path = DYZB;
 			sourceTree = "<group>";
 		};
 		8D69EB601DB65E29001D6C1F /* Extension */ = {
@@ -140,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				8DA5EB0B1DB4FC800082C9A5 /* DYZB */,
+				8D542A5A1DB4FF49001C7056 /* Tool */,
 				8DA5EB0A1DB4FC800082C9A5 /* Products */,
 				DBF19C548A78E3407BCB08CC /* Pods */,
 				CD20363911A85CE1D682B8B8 /* Frameworks */,
@@ -158,7 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				8DF1215D1DFA7B9F00311644 /* ViewModel */,
-				8D542A5A1DB4FF49001C7056 /* Tool */,
 				8D542A591DB4FF43001C7056 /* Model */,
 				8DA5EB1F1DB4FDB60082C9A5 /* View */,
 				8DA5EB1E1DB4FDAF0082C9A5 /* Controller */,
@@ -370,6 +374,7 @@
 				8DDA908E1E08BD5200959BF8 /* RecommendCycleView.swift in Sources */,
 				8D7793FD1DF8F9AC00E68D6C /* PrettyCollectionViewCell.swift in Sources */,
 				8D542A721DB50ACF001C7056 /* ProfileViewController.swift in Sources */,
+				8D7DCF5E1E0A5900004A7130 /* CycleModel.swift in Sources */,
 				8D7793F21DF7A36E00E68D6C /* RecommendViewController.swift in Sources */,
 				8D5894571DC8C5FC0086C759 /* yuleViewController.swift in Sources */,
 				8D542A621DB5030C001C7056 /* MainViewController.swift in Sources */,
