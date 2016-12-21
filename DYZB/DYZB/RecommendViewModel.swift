@@ -77,7 +77,7 @@ extension RecommendViewModel {
         }
     }
     
-    func requstCycleData(finishCallback:@escaping ()->()){
+    func requstCycleData(finishCallback: @escaping ()->()){
         NetworkTools.requestData(.get, URLString: "http://www.douyutv.com/api/v1/slide/6", parameters: ["version":"2.300"]) { (result) in
             guard let resultDic = result as? [String : NSObject] else { return }
             guard let dataArray = resultDic["data"] as? [[String :NSObject]] else {return}

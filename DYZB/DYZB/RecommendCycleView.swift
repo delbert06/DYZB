@@ -54,6 +54,9 @@ extension RecommendCycleView : UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cycleViewCellID, for: indexPath)
+        
+        let cycleModel = cycleModel![indexPath.item]
+        
         cell.backgroundColor = indexPath.item % 2 == 0 ? .red : .blue
         
         return cell
