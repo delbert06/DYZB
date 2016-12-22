@@ -32,6 +32,8 @@
 		8D7793FD1DF8F9AC00E68D6C /* PrettyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7793FB1DF8F9AC00E68D6C /* PrettyCollectionViewCell.swift */; };
 		8D7793FE1DF8F9AC00E68D6C /* PrettyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D7793FC1DF8F9AC00E68D6C /* PrettyCollectionViewCell.xib */; };
 		8D7DCF5E1E0A5900004A7130 /* CycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7DCF5D1E0A5900004A7130 /* CycleModel.swift */; };
+		8D7DCF691E0BA4BB004A7130 /* CollectionCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7DCF671E0BA4BB004A7130 /* CollectionCycleCell.swift */; };
+		8D7DCF6A1E0BA4BB004A7130 /* CollectionCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D7DCF681E0BA4BB004A7130 /* CollectionCycleCell.xib */; };
 		8DA170231DBE3DC100C4E1D4 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA170221DBE3DC100C4E1D4 /* PageContentView.swift */; };
 		8DA170291DBE60A600C4E1D4 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA170281DBE60A600C4E1D4 /* UIColorExtension.swift */; };
 		8DA5EB0D1DB4FC800082C9A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5EB0C1DB4FC800082C9A5 /* AppDelegate.swift */; };
@@ -77,6 +79,8 @@
 		8D7793FB1DF8F9AC00E68D6C /* PrettyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrettyCollectionViewCell.swift; sourceTree = "<group>"; };
 		8D7793FC1DF8F9AC00E68D6C /* PrettyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrettyCollectionViewCell.xib; sourceTree = "<group>"; };
 		8D7DCF5D1E0A5900004A7130 /* CycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleModel.swift; sourceTree = "<group>"; };
+		8D7DCF671E0BA4BB004A7130 /* CollectionCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCycleCell.swift; sourceTree = "<group>"; };
+		8D7DCF681E0BA4BB004A7130 /* CollectionCycleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCycleCell.xib; sourceTree = "<group>"; };
 		8DA170221DBE3DC100C4E1D4 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		8DA170281DBE60A600C4E1D4 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		8DA5EB091DB4FC800082C9A5 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,6 +214,8 @@
 				8DDA90851E03B98800959BF8 /* CollectionBaseCell.swift */,
 				8DDA908D1E08BD5200959BF8 /* RecommendCycleView.swift */,
 				8DDA90911E090D1200959BF8 /* RecommendCycleView.xib */,
+				8D7DCF671E0BA4BB004A7130 /* CollectionCycleCell.swift */,
+				8D7DCF681E0BA4BB004A7130 /* CollectionCycleCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -311,6 +317,7 @@
 				8D542A661DB50612001C7056 /* Home.storyboard in Resources */,
 				8DDA90921E090D1200959BF8 /* RecommendCycleView.xib in Resources */,
 				8D542A6E1DB50A63001C7056 /* Profile.storyboard in Resources */,
+				8D7DCF6A1E0BA4BB004A7130 /* CollectionCycleCell.xib in Resources */,
 				8D542A6B1DB50A0D001C7056 /* Follow.storyboard in Resources */,
 				8D231FA21DF94D3C002D31FC /* Podfile in Resources */,
 			);
@@ -379,6 +386,7 @@
 				8D5894571DC8C5FC0086C759 /* yuleViewController.swift in Sources */,
 				8D542A621DB5030C001C7056 /* MainViewController.swift in Sources */,
 				8DA170231DBE3DC100C4E1D4 /* PageContentView.swift in Sources */,
+				8D7DCF691E0BA4BB004A7130 /* CollectionCycleCell.swift in Sources */,
 				8D542A781DB5138D001C7056 /* UIBarButtonItem-Extension.swift in Sources */,
 				8DC320881E0119D60063AD93 /* AnchorGroup.swift in Sources */,
 				8DA5EB0F1DB4FC800082C9A5 /* ViewController.swift in Sources */,

@@ -29,8 +29,10 @@ class RecommendCycleView: UIView {
         // 设置该控件不随着父控件的拉伸而拉伸
         autoresizingMask = UIViewAutoresizing()
         
+        
+        
         // colldectionView
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cycleViewCellID)
+        collectionView.register(UINib(nibName: "CollectionCycleCell", bundle: nil), forCellWithReuseIdentifier: cycleViewCellID)
     }
     
     override func layoutSubviews() {
@@ -41,24 +43,36 @@ class RecommendCycleView: UIView {
     }
 }
 
+// MARK: - 提供快速创建View的方法
 extension RecommendCycleView {
     class func recommendCycleView() ->  RecommendCycleView{
         return Bundle.main.loadNibNamed("RecommendCycleView", owner: nil, options: nil)?.first as! RecommendCycleView
     }
 }
 
+// MARK: - 数据源方法
 extension RecommendCycleView : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return cycleModels?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cycleViewCellID, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cycleViewCellID, for: indexPath) as! CollectionCycleCell
         
-        let cycleModel = cycleModel![indexPath.item]
-        
-        cell.backgroundColor = indexPath.item % 2 == 0 ? .red : .blue
+        cell.cycleModel = cycleModels![indexPath.item]
         
         return cell
+    }
+}
+
+// MARK : - 代理方法
+extension RecommendCycleView : UICollectionViewDelegate{
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        // 1. 获得滚动的偏移量
+        // 加后边的scrollView.bounds.width * 0.5是为了拖动到一半就换页
+        let offsetX = scrollView.contentOffset.x + scrollView.bounds.width * 0.5
+        
+        // 2. 计算pageControll的currentIndex
+        pageView.currentPage = Int(offsetX / scrollView.bounds.width)
     }
 }
