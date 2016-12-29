@@ -24,6 +24,8 @@
 		8D58945B1DC8C6110086C759 /* quwanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D58945A1DC8C6110086C759 /* quwanViewController.swift */; };
 		8D69EB5F1DB65BFA001D6C1F /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D69EB5E1DB65BFA001D6C1F /* PageTitleView.swift */; };
 		8D69EB621DB65E52001D6C1F /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D69EB611DB65E52001D6C1F /* Common.swift */; };
+		8D6B92A91E14AF880094787B /* RecommendGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6B92A81E14AF880094787B /* RecommendGameView.swift */; };
+		8D6B92AB1E14AF9F0094787B /* RecommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D6B92AA1E14AF9F0094787B /* RecommendGameView.xib */; };
 		8D7793F21DF7A36E00E68D6C /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7793F11DF7A36E00E68D6C /* RecommendViewController.swift */; };
 		8D7793F51DF7EAE500E68D6C /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7793F31DF7EAE500E68D6C /* CollectionHeaderView.swift */; };
 		8D7793F61DF7EAE500E68D6C /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D7793F41DF7EAE500E68D6C /* CollectionHeaderView.xib */; };
@@ -71,6 +73,8 @@
 		8D58945A1DC8C6110086C759 /* quwanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = quwanViewController.swift; sourceTree = "<group>"; };
 		8D69EB5E1DB65BFA001D6C1F /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		8D69EB611DB65E52001D6C1F /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		8D6B92A81E14AF880094787B /* RecommendGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendGameView.swift; sourceTree = "<group>"; };
+		8D6B92AA1E14AF9F0094787B /* RecommendGameView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendGameView.xib; sourceTree = "<group>"; };
 		8D7793F11DF7A36E00E68D6C /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 		8D7793F31DF7EAE500E68D6C /* CollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
 		8D7793F41DF7EAE500E68D6C /* CollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
@@ -216,6 +220,8 @@
 				8DDA90911E090D1200959BF8 /* RecommendCycleView.xib */,
 				8D7DCF671E0BA4BB004A7130 /* CollectionCycleCell.swift */,
 				8D7DCF681E0BA4BB004A7130 /* CollectionCycleCell.xib */,
+				8D6B92A81E14AF880094787B /* RecommendGameView.swift */,
+				8D6B92AA1E14AF9F0094787B /* RecommendGameView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -312,6 +318,7 @@
 				8D7793F61DF7EAE500E68D6C /* CollectionHeaderView.xib in Resources */,
 				8D7793FA1DF7F3CA00E68D6C /* NormalCollectionCell.xib in Resources */,
 				8DA5EB141DB4FC800082C9A5 /* Assets.xcassets in Resources */,
+				8D6B92AB1E14AF9F0094787B /* RecommendGameView.xib in Resources */,
 				8DA5EB121DB4FC800082C9A5 /* Main.storyboard in Resources */,
 				8D542A691DB509E6001C7056 /* Live.storyboard in Resources */,
 				8D542A661DB50612001C7056 /* Home.storyboard in Resources */,
@@ -381,6 +388,7 @@
 				8DDA908E1E08BD5200959BF8 /* RecommendCycleView.swift in Sources */,
 				8D7793FD1DF8F9AC00E68D6C /* PrettyCollectionViewCell.swift in Sources */,
 				8D542A721DB50ACF001C7056 /* ProfileViewController.swift in Sources */,
+				8D6B92A91E14AF880094787B /* RecommendGameView.swift in Sources */,
 				8D7DCF5E1E0A5900004A7130 /* CycleModel.swift in Sources */,
 				8D7793F21DF7A36E00E68D6C /* RecommendViewController.swift in Sources */,
 				8D5894571DC8C5FC0086C759 /* yuleViewController.swift in Sources */,
