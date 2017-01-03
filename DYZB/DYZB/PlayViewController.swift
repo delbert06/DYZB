@@ -1,20 +1,20 @@
 //
-//  quwanViewController.swift
+//  PlayViewController.swift
 //  DYZB
 //
-//  Created by 胡迪 on 2016/11/1.
-//  Copyright © 2016年 D.Huhu. All rights reserved.
+//  Created by 胡迪 on 2017/1/3.
+//  Copyright © 2017年 D.Huhu. All rights reserved.
 //
 
 import UIKit
 
-class quwanViewController: UIViewController {
+class PlayViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("quwanViewController")
         // Do any additional setup after loading the view.
+        view.backgroundColor = UIColor.red
     }
 
     override func didReceiveMemoryWarning() {

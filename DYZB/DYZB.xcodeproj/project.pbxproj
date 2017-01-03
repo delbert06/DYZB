@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8D0447AE1E1B699C00DD0A9E /* CollectionGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0447AC1E1B699C00DD0A9E /* CollectionGameCell.swift */; };
 		8D0447AF1E1B699C00DD0A9E /* CollectionGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D0447AD1E1B699C00DD0A9E /* CollectionGameCell.xib */; };
+		8D0447B11E1B8D1B00DD0A9E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0447B01E1B8D1B00DD0A9E /* GameViewController.swift */; };
+		8D0447B31E1B967000DD0A9E /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0447B21E1B967000DD0A9E /* PlayViewController.swift */; };
 		8D231FA01DF9497D002D31FC /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D231F9F1DF9497D002D31FC /* NetworkTools.swift */; };
 		8D231FA21DF94D3C002D31FC /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8D231FA11DF94D3C002D31FC /* Podfile */; };
 		8D542A621DB5030C001C7056 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D542A611DB5030C001C7056 /* MainViewController.swift */; };
@@ -21,9 +23,6 @@
 		8D542A721DB50ACF001C7056 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D542A711DB50ACF001C7056 /* ProfileViewController.swift */; };
 		8D542A741DB50ADA001C7056 /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D542A731DB50ADA001C7056 /* FollowViewController.swift */; };
 		8D542A781DB5138D001C7056 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D542A771DB5138D001C7056 /* UIBarButtonItem-Extension.swift */; };
-		8D5894571DC8C5FC0086C759 /* yuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5894561DC8C5FC0086C759 /* yuleViewController.swift */; };
-		8D5894591DC8C6090086C759 /* youxiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5894581DC8C6090086C759 /* youxiViewController.swift */; };
-		8D58945B1DC8C6110086C759 /* quwanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D58945A1DC8C6110086C759 /* quwanViewController.swift */; };
 		8D69EB5F1DB65BFA001D6C1F /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D69EB5E1DB65BFA001D6C1F /* PageTitleView.swift */; };
 		8D69EB621DB65E52001D6C1F /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D69EB611DB65E52001D6C1F /* Common.swift */; };
 		8D6B92A91E14AF880094787B /* RecommendGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6B92A81E14AF880094787B /* RecommendGameView.swift */; };
@@ -60,6 +59,8 @@
 		502ADED3345A1F0D51C94705 /* Pods_DYZB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYZB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D0447AC1E1B699C00DD0A9E /* CollectionGameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionGameCell.swift; sourceTree = "<group>"; };
 		8D0447AD1E1B699C00DD0A9E /* CollectionGameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionGameCell.xib; sourceTree = "<group>"; };
+		8D0447B01E1B8D1B00DD0A9E /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		8D0447B21E1B967000DD0A9E /* PlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		8D231F9F1DF9497D002D31FC /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		8D231FA11DF94D3C002D31FC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		8D542A611DB5030C001C7056 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -72,9 +73,6 @@
 		8D542A711DB50ACF001C7056 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		8D542A731DB50ADA001C7056 /* FollowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
 		8D542A771DB5138D001C7056 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
-		8D5894561DC8C5FC0086C759 /* yuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = yuleViewController.swift; sourceTree = "<group>"; };
-		8D5894581DC8C6090086C759 /* youxiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = youxiViewController.swift; sourceTree = "<group>"; };
-		8D58945A1DC8C6110086C759 /* quwanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = quwanViewController.swift; sourceTree = "<group>"; };
 		8D69EB5E1DB65BFA001D6C1F /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		8D69EB611DB65E52001D6C1F /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		8D6B92A81E14AF880094787B /* RecommendGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendGameView.swift; sourceTree = "<group>"; };
@@ -200,10 +198,9 @@
 				8D542A6F1DB50AC3001C7056 /* LiveViewController.swift */,
 				8D542A711DB50ACF001C7056 /* ProfileViewController.swift */,
 				8D542A731DB50ADA001C7056 /* FollowViewController.swift */,
-				8D5894561DC8C5FC0086C759 /* yuleViewController.swift */,
-				8D5894581DC8C6090086C759 /* youxiViewController.swift */,
-				8D58945A1DC8C6110086C759 /* quwanViewController.swift */,
 				8D7793F11DF7A36E00E68D6C /* RecommendViewController.swift */,
+				8D0447B01E1B8D1B00DD0A9E /* GameViewController.swift */,
+				8D0447B21E1B967000DD0A9E /* PlayViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -398,7 +395,6 @@
 				8D6B92A91E14AF880094787B /* RecommendGameView.swift in Sources */,
 				8D7DCF5E1E0A5900004A7130 /* CycleModel.swift in Sources */,
 				8D7793F21DF7A36E00E68D6C /* RecommendViewController.swift in Sources */,
-				8D5894571DC8C5FC0086C759 /* yuleViewController.swift in Sources */,
 				8D542A621DB5030C001C7056 /* MainViewController.swift in Sources */,
 				8DA170231DBE3DC100C4E1D4 /* PageContentView.swift in Sources */,
 				8D7DCF691E0BA4BB004A7130 /* CollectionCycleCell.swift in Sources */,
@@ -407,6 +403,7 @@
 				8DA5EB0F1DB4FC800082C9A5 /* ViewController.swift in Sources */,
 				8DA5EB0D1DB4FC800082C9A5 /* AppDelegate.swift in Sources */,
 				8DDA90861E03B98800959BF8 /* CollectionBaseCell.swift in Sources */,
+				8D0447B31E1B967000DD0A9E /* PlayViewController.swift in Sources */,
 				8D7793F91DF7F3CA00E68D6C /* NormalCollectionCell.swift in Sources */,
 				8D7793F51DF7EAE500E68D6C /* CollectionHeaderView.swift in Sources */,
 				8D542A641DB50354001C7056 /* HomeViewController.swift in Sources */,
@@ -414,14 +411,13 @@
 				8DF121631DFA8B5500311644 /* NSDateEtension.swift in Sources */,
 				8DF121611DFA7C1C00311644 /* RecommendViewModel.swift in Sources */,
 				8DC3208A1E0120B60063AD93 /* AnChorModel.swift in Sources */,
+				8D0447B11E1B8D1B00DD0A9E /* GameViewController.swift in Sources */,
 				8D69EB5F1DB65BFA001D6C1F /* PageTitleView.swift in Sources */,
 				8D0447AE1E1B699C00DD0A9E /* CollectionGameCell.swift in Sources */,
-				8D5894591DC8C6090086C759 /* youxiViewController.swift in Sources */,
 				8D542A701DB50AC3001C7056 /* LiveViewController.swift in Sources */,
 				8D69EB621DB65E52001D6C1F /* Common.swift in Sources */,
 				8D542A741DB50ADA001C7056 /* FollowViewController.swift in Sources */,
 				8DA170291DBE60A600C4E1D4 /* UIColorExtension.swift in Sources */,
-				8D58945B1DC8C6110086C759 /* quwanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

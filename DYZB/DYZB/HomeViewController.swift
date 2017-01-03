@@ -27,18 +27,9 @@ class HomeViewController: UIViewController {
         
         var childVCs = [UIViewController]()
 
-        let youxiVC = self.storyboard?.instantiateViewController(withIdentifier: "youxi")
-//        let tuijianVC = self.storyboard?.instantiateViewController(withIdentifier: "tuijian")
-        let yuleVC = self.storyboard?.instantiateViewController(withIdentifier:"yule")
-        let quwanVC = self.storyboard?.instantiateViewController(withIdentifier:"quwan")
-
         childVCs.append(RecommendViewController())
-        //        childVCs.append(tuijianVC!)
-        childVCs.append(youxiVC!)
-        childVCs.append(yuleVC!)
-        childVCs.append(quwanVC!)
-        
-        
+        childVCs.append(GameViewController())
+        childVCs.append(PlayViewController())
         
         let contentView = PageContentView(frame: contentFrame, childVCs: childVCs, parentVC: self)
         contentView.delegate = self
@@ -74,8 +65,10 @@ class HomeViewController: UIViewController {
     
     private func setNavigationBar(){
         
+        // 1. 设置左边的item
         navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: "logo")
         
+        // 2. 创建UICollectionView
         let size = CGSize(width: 40, height: 40)
         
         let his = UIBarButtonItem(imageName: "image_my_history", highImage: "Image_my_history_click", size: size)
