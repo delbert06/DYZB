@@ -90,7 +90,7 @@ extension RecommendCycleView : UICollectionViewDelegate{
     
     // 防止拖拽的时候cell滚动
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        removeCycleTimer()
+        removeCycleTimer() 
     }
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
