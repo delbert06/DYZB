@@ -144,8 +144,11 @@ extension RecommendViewController :UICollectionViewDataSource , UICollectionView
 // MARK: - 网络请求
 extension RecommendViewController{
     func loadData(){
-        recommendViewModel.requestData { 
+        recommendViewModel.requestData {
+            // 1. 展示推荐数据
             self.collectionView.reloadData()
+            // 2. 将数据传递给gameView
+            self.recommendGameView.groups = self.recommendViewModel.anchorGroups
         }
         
         recommendViewModel.requstCycleData { 

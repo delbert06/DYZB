@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionGameCell" customModule="DYZB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="皇家马德里" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AdF-S2-JBV">
+                        <rect key="frame" x="12" y="65" width="57" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="2X7-jR-2El"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="imL-bv-nvG">
+                        <rect key="frame" x="17.5" y="15" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="imL-bv-nvG" secondAttribute="height" multiplier="1:1" id="7gB-fl-KtC"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="22.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="imL-bv-nvG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="1kp-Pt-6XQ"/>
+                <constraint firstItem="AdF-S2-JBV" firstAttribute="top" secondItem="imL-bv-nvG" secondAttribute="bottom" constant="5" id="8K2-Ww-o95"/>
+                <constraint firstItem="imL-bv-nvG" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Nmb-co-2Jx"/>
+                <constraint firstAttribute="bottom" secondItem="AdF-S2-JBV" secondAttribute="bottom" constant="10" id="SoF-1c-rH0"/>
+                <constraint firstItem="AdF-S2-JBV" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="oyo-bD-Vke"/>
+            </constraints>
+            <size key="customSize" width="95" height="92"/>
+            <connections>
+                <outlet property="iconImage" destination="imL-bv-nvG" id="7ut-iV-xa0"/>
+                <outlet property="titleLabel" destination="AdF-S2-JBV" id="3wx-8B-98s"/>
+            </connections>
+            <point key="canvasLocation" x="47" y="73"/>
+        </collectionViewCell>
+    </objects>
+</document>
