@@ -29,9 +29,11 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="imL-bv-nvG">
-                        <rect key="frame" x="17.5" y="15" width="45" height="45"/>
+                        <rect key="frame" x="18" y="15" width="45" height="45"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="imL-bv-nvG" secondAttribute="height" multiplier="1:1" id="7gB-fl-KtC"/>
+                            <constraint firstAttribute="height" constant="45" id="Eyy-Hd-zy9"/>
+                            <constraint firstAttribute="width" constant="45" id="vfs-w4-v0f"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -40,21 +42,31 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
+                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8He-7p-ocT">
+                        <rect key="frame" x="0.0" y="89" width="80" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Ic3-kE-EuO"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="imL-bv-nvG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="1kp-Pt-6XQ"/>
                 <constraint firstItem="AdF-S2-JBV" firstAttribute="top" secondItem="imL-bv-nvG" secondAttribute="bottom" constant="5" id="8K2-Ww-o95"/>
-                <constraint firstItem="imL-bv-nvG" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Nmb-co-2Jx"/>
-                <constraint firstAttribute="bottom" secondItem="AdF-S2-JBV" secondAttribute="bottom" constant="10" id="SoF-1c-rH0"/>
-                <constraint firstItem="AdF-S2-JBV" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="oyo-bD-Vke"/>
+                <constraint firstItem="imL-bv-nvG" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Ce6-5y-2CZ"/>
+                <constraint firstItem="imL-bv-nvG" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-8" id="Fgb-TU-dg0"/>
+                <constraint firstItem="8He-7p-ocT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="P38-yS-i0F"/>
+                <constraint firstAttribute="trailing" secondItem="8He-7p-ocT" secondAttribute="trailing" id="ZHw-tL-DIW"/>
+                <constraint firstItem="AdF-S2-JBV" firstAttribute="top" secondItem="imL-bv-nvG" secondAttribute="bottom" constant="5" id="aZM-L8-em5"/>
+                <constraint firstAttribute="bottom" secondItem="8He-7p-ocT" secondAttribute="bottom" id="nw6-qc-1VJ"/>
+                <constraint firstItem="AdF-S2-JBV" firstAttribute="centerX" secondItem="imL-bv-nvG" secondAttribute="centerX" id="wG1-X9-bCV"/>
             </constraints>
             <size key="customSize" width="95" height="92"/>
             <connections>
                 <outlet property="iconImage" destination="imL-bv-nvG" id="7ut-iV-xa0"/>
                 <outlet property="titleLabel" destination="AdF-S2-JBV" id="3wx-8B-98s"/>
             </connections>
-            <point key="canvasLocation" x="47" y="73"/>
+            <point key="canvasLocation" x="39" y="96"/>
         </collectionViewCell>
     </objects>
 </document>
