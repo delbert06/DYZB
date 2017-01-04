@@ -11,7 +11,6 @@ private let kEdgeMargin : CGFloat = 10
 private let kItemW : CGFloat = (kScreenW - 2 * kEdgeMargin) / 3
 private let kItemH : CGFloat = kItemW * 6 / 5
 private let kHeaderViewH : CGFloat = 50
-
 private let kGameViewH : CGFloat = 90
 
 private let kGameCellID = "kGameCellID"
@@ -43,6 +42,23 @@ class GameViewController: UIViewController {
         
         return collectionView
     }()
+    fileprivate lazy var topHeaderView : CollectionHeaderView = {
+        let headerView = CollectionHeaderView.collectionHeaderView()
+        
+        headerView.frame = CGRect(x: 0, y: -kHeaderViewH - kGameViewH, width: kScreenW, height: kHeaderViewH)
+        headerView.headerImage.image = UIImage(named: "Img_orange")
+        headerView.headerLabel.text = "常见"
+        headerView.moreBtn.isHidden = true
+        
+        return headerView
+        
+    }()
+    fileprivate lazy var gameView : RecommendGameView = {
+        let gameView = RecommendGameView.recommendGameView()
+        gameView.frame = CGRect(x: 0, y: -kGameViewH, width: kScreenW, height: kGameViewH)
+        
+        return gameView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,7 +77,17 @@ extension GameViewController{
     // MARK:- 设置UI界面
 extension GameViewController {
     fileprivate func setupUI() {
+        // 1. 添加collectionView
         view.addSubview(collectionView)
+        
+        // 2. 添加headerView
+        collectionView.addSubview(topHeaderView)
+        
+        // 3. 添加headerView内边距
+        collectionView.contentInset = UIEdgeInsets(top: kHeaderViewH + kGameViewH, left: 0, bottom: 0, right: 0)
+        
+        // 4. 将常用添加到collectionView
+        collectionView.addSubview(gameView)
     }
 }
 
