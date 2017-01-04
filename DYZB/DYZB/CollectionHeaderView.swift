@@ -11,6 +11,7 @@ import UIKit
 class CollectionHeaderView: UICollectionReusableView {
     @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var headerImage: UIImageView!
+    @IBOutlet weak var moreBtn: UIButton!
     
     var group : AnchorGroup?{
         didSet{

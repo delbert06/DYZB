@@ -15,6 +15,7 @@ private let kHeaderViewH : CGFloat = 50
 private let kGameViewH : CGFloat = 90
 
 private let kGameCellID = "kGameCellID"
+private let kHeaderViewID = "kHeaderViewID"
 
 class GameViewController: UIViewController {
     
@@ -29,11 +30,16 @@ class GameViewController: UIViewController {
         layout.sectionInset = UIEdgeInsets(top: 0, left: kEdgeMargin, bottom: 0, right: kEdgeMargin)
         layout.headerReferenceSize = CGSize(width: kScreenW, height: kHeaderViewH)
         
+        
         // 2.创建UICollectionView
         let collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
         collectionView.register(UINib(nibName: "CollectionGameCell", bundle: nil), forCellWithReuseIdentifier: kGameCellID)
         collectionView.backgroundColor = UIColor.white
         collectionView.dataSource = self
+        
+        // headerView
+        layout.headerReferenceSize = CGSize(width: kScreenW, height: kHeaderViewH)
+        collectionView.register(UINib(nibName: "CollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
         
         return collectionView
     }()
@@ -72,5 +78,17 @@ extension GameViewController : UICollectionViewDataSource {
         cell.baseGame = gameVM.games[indexPath.item]
         
         return cell
+    }
+    
+    // 取出headerView
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        // 1. 取出headView
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath) as! CollectionHeaderView
+        // 2. 给headerView设置属性
+        headerView.headerLabel.text = "全部"
+        headerView.headerImage.image = UIImage(named: "Img_orange")
+        headerView.moreBtn.isHidden = true
+        
+        return headerView
     }
 }
