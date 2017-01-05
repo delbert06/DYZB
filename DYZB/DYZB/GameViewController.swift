@@ -18,6 +18,14 @@ private let kHeaderViewID = "kHeaderViewID"
 
 class GameViewController: UIViewController {
     
+    // MARK: - 定义属性
+    var groups : [GameModel]?{
+        didSet{
+            // 刷新表格
+            collectionView.reloadData()
+        }
+    }
+    
     // MARK: - 懒加载属性
     fileprivate lazy var gameVM : GameViewModel = GameViewModel()
     fileprivate lazy var collectionView: UICollectionView = {[unowned self] in
@@ -70,7 +78,16 @@ class GameViewController: UIViewController {
 extension GameViewController{
     func loadData(){
         self.gameVM.loadGameData {
+            // 1. 展示全部游戏数据
             self.collectionView.reloadData()
+            // 2. 展示常用数据
+//            var tempArray = [GameModel]()
+//            for i in 0..<10{
+//                tempArray.append(self.gameVM.games[i])
+//            }
+//            self.gameView.groups = tempArray
+            // 上边方法比较复杂 用下边的
+            self.gameView.groups = Array(self.gameVM.games[0..<10])
         }
     }
 }
